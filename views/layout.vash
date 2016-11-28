@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>@it.title</title>
+  <link rel="stylesheet" href="@(it.static.root)/css/index.css@(it.static.suffix)">
+</head>
+<body>
+  @html.block('content')
+  <script src="@(it.static.root)/js/index.js@(it.static.suffix)"></script>
+</body>
+</html>

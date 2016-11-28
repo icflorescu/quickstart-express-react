@@ -1,0 +1,23 @@
+parser: babel-eslint
+rules:
+  quotes:
+    - warn
+    - single
+    - allowTemplateLiterals: true
+  yoda: warn
+  no-shadow: warn
+  array-bracket-spacing: warn
+  comma-style: warn
+  indent:
+    - warn
+    - 2
+    -
+      VariableDeclarator:
+        var: 2
+        let: 2
+        const: 3
+      SwitchCase: 1
+  max-len:
+    - warn
+    - 120
+    - ignoreTemplateLiterals: true

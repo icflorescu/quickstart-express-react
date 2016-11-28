@@ -1,0 +1,6 @@
+@html.extend('layout', function (it) {
+  @html.block('content', function (it) {
+    <h1>@it.title</h1>
+    <p>@it.content</p>
+  })
+})
