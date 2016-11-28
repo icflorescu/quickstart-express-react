@@ -1,5 +1,7 @@
 # A "real-life" Express + React application quickstart
 
+![Express, React, BrowserSync, Webpack, Nodemon](https://cloud.githubusercontent.com/assets/581999/20681348/e629cd74-b5ab-11e6-94fa-b3b30cdbacc3.png)
+
 Combined live/hot-reloading for Express.js and React.
 
 ## Warning
@@ -61,9 +63,8 @@ I'm getting lots of questions from people just learning to do web development or
 
 ## Credits
 
-If you find this repo useful, don't hesitate to give it a star, [spread the word](http://twitter.com/share?text=Checkout%20this%20custom%20Express%2BReact%20quickstart!&amp;url=http%3A%2F%2Fgithub.com/icflorescu/quickstart-express-react&amp;hashtags=javascript,nodejs,express,react,hmr&amp;via=icflorescu) or even [endorse](https://www.linkedin.com/in/icflorescu) the author on LinkedIn.
+If you find this repo useful, don't hesitate to give it a star, [spread the word](http://twitter.com/share?text=Checkout%20this%20custom%20Express%2BReact%20quickstart!&amp;url=http%3A%2F%2Fgithub.com/icflorescu/quickstart-express-react&amp;hashtags=javascript,nodejs,express,react,hmr,livereload&amp;via=icflorescu) or even [endorse](https://www.linkedin.com/in/icflorescu) the author on LinkedIn.
 
 ## License
 
-[ISC](https://en.wikipedia.org/wiki/ISC_license)-licensed by [Ionut-Cristian Florescu](https://github.com/icflorescu).
-Feel free to use and abuse.
+[ISC](https://en.wikipedia.org/wiki/ISC_license)-licensed by [Ionut-Cristian Florescu](https://github.com/icflorescu). Feel free to use and abuse.
