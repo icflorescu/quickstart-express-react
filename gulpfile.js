@@ -7,7 +7,7 @@ const sourcemaps   = require('gulp-sourcemaps');
 
 const run = (cb, production) => {
   gulp
-    .src('./client/styles/*.scss')
+    .src('client/styles/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(
@@ -20,7 +20,7 @@ const run = (cb, production) => {
         ? sourcemaps.write('./', { addComment: false })
         : sourcemaps.write()
     )
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('public/css'));
   if (typeof cb == 'function') cb();
 };
 
@@ -30,5 +30,5 @@ gulp.task('scss:build', cb => {
 
 gulp.task('scss:watch', () => {
   run();
-  return gulp.watch('./client/styles/*.scss', run);
+  return gulp.watch('client/styles/*.scss', run);
 });

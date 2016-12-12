@@ -1,0 +1,25 @@
+html, body, {
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.content {
+  min-height: 100%;
+  padding-bottom: 48px;
+  margin-bottom: -48px;
+}
+
+.footer {
+  height: 48px;
+}
+
+.material-icons {
+  vertical-align: middle;
+}

@@ -1,6 +1,21 @@
 @html.extend('layout', function (it) {
   @html.block('content', function (it) {
-    <h1>@it.title</h1>
-    <p>@it.content</p>
+    <div class="home">
+      <div class="home-hero">
+        <h1 class="home-hero-title">@it.title</h1>
+        <img
+          class="home-hero-pic"
+          alt="Application quickstart"
+          src="https://cloud.githubusercontent.com/assets/581999/20681348/e629cd74-b5ab-11e6-94fa-b3b30cdbacc3.png">
+      </div>
+      <p>A hot-reloading application quickstart based on:</p>
+      <ul class="mui-list--unstyled">
+        <li>Express</li>
+        <li>React</li>
+        <li>BrowserSync</li>
+        <li>Webpack@@2</li>
+        <li>Nodemon</li>
+      </ul>
+    </div>
   })
 })

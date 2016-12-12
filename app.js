@@ -8,6 +8,7 @@ import mime         from 'mime';
 
 import config from './app.config';
 import pages  from './routes/pages';
+import api    from './routes/api';
 import error  from './routes/error';
 
 const app = express();
@@ -35,6 +36,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(pages);
+app.use(api);
 app.use(error);
 
 app.listen(config.port, config.host, () => {

@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>@it.title</title>
-  <link rel="stylesheet" href="@(it.static.root)/css/index.css@(it.static.suffix)">
-</head>
-<body>
-  @html.block('content')
-  <script src="@(it.static.root)/js/index.js@(it.static.suffix)"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="//cdn.muicss.com/mui-0.9.6/css/mui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="@(it.static.root)/css/index.css@(it.static.suffix)">
+    <title>@it.title</title>
+    <meta name="author" content="Ionut-Cristian Florescu">
+  </head>
+  <body>
+    <header class="header mui-appbar mui--z1">
+      <a class="header-link" href="/" alt="Home">
+        <i class="material-icons">developer_board</i>
+        <span class="header-title">Application Quickstart</span>
+      </a>
+      <div class="header-menu">
+        <a class="header-link"
+          href="/app" title="Client-side React app">
+          <i class="material-icons">event_note</i>
+        </a>
+        <a class="header-link"
+          href="https://github.com/icflorescu/quickstart-express-react"
+          title="GitHub Repo" target="_blank">
+          <i class="material-icons">code</i>
+        </a>
+      </div>
+    </header>
+    <section class="content">
+      <div class="mui--appbar-height"></div>
+      @html.block('content')
+    </section>
+    <footer class="footer">
+      <i class="material-icons">code</i>
+      <span class="footer-text">
+        View code in the GitHub
+        <a href="https://github.com/icflorescu/quickstart-express-react" target="_blank">repository</a>
+      </span>
+    </footer>
+    <script src="//cdn.muicss.com/mui-0.9.6/js/mui.min.js"></script>
+    <script src="@(it.static.root)/js/index.js@(it.static.suffix)"></script>
+  </body>
 </html>

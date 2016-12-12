@@ -45,14 +45,15 @@ Hence the need of a functional, truly **general-purpose hot-reloading approach**
 ## Notes & Customizations
 
 - For demo purposes, server-side views are generated with [Vash](https://github.com/kirbysayshi/vash) template engine, but you can use [Pug](https://pugjs.org/api/getting-started.html), [EJS](http://ejs.co/), or anything else, as long as you make the necessary amendments in `dev.js` to instruct the browser to reload when one of your views changes.
+- A very simple/non-scalable JSON persistence mechanism based on [lowdb](https://github.com/typicode/lowdb) and [underscore-db](https://github.com/typicode/underscore-db) is used as a server-side "database", **for demo purposes**. Make sure to `npm uninstall -S lowdb underscore-db` and replace with an appropriate data persistence layer.
 - A very simple [gulp](http://gulpjs.com/) scenario is used for the sole purpose of transforming SCSS with [node-sass](https://github.com/sass/node-sass) and applying [autoprefixer](https://github.com/postcss/autoprefixer) transformations with [sourcemaps](https://github.com/floridoo/gulp-sourcemaps) support in a single step. You can adapt it according to your own needs, or even fully replace it with a simple `npm` script if you're using [Stylus](http://stylus-lang.com/) with [autoprefixer-stylus](https://github.com/jescalan/autoprefixer-stylus) plugin or write your styles in plain CSS.
 - `package.json` contains simple `npm` scripts for running in development and production mode.
-- The quickstart assumes a simple, yet efficient asset versioning mechanism based on `package.json` version: the static assets are served from a "virtual" root `/static/x.x.x.x`, where `x.x.x.x` is the package version. Just make sure to do an `npm version bump` as part of your deployment scenario (not provided here).
+- The quickstart provides a simple, yet efficient asset versioning mechanism based on `package.json` version: the static assets are served from a "virtual" root `/static/x.x.x.x`, where `x.x.x.x` is the package version. Just make sure to do an `npm version bump` as part of your deployment scenario (not provided here).
 - Efficient ES6 on the server with [babel-preset-latest-minimal](https://github.com/gabmontes/babel-preset-latest-minimal) – configured in `index.js`.
 - In development mode, [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) are **running as browsersync middlewares**. This way we end up **keeping the main Express application uncluttered by development-related code**.
 - Webpack [babel-loader](https://github.com/babel/babel-loader) is using [stage-2](https://babeljs.io/docs/plugins/preset-stage-2/) and [react](https://babeljs.io/docs/plugins/preset-react/) presets and **[react-hot-loader](https://github.com/gaearon/react-hot-loader)@3** – configured in `webpack.config.js`.
 - On the server, the `global.Promise` is replaced with [bluebird](http://bluebirdjs.com/docs/getting-started.html) for [performance reasons](http://bluebirdjs.com/docs/benchmarks.html) – this is configured in `index.js`. Simply remove it if you don't like the idea.
-
+-
 ## Contributing
 
 PRs are welcomed, but keep in mind this is just one of the [many quickstart alternatives](https://www.google.com/?q=react+quickstart) available in the wild, and it's not intended to cover all possible use-cases (or yours in particular).

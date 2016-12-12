@@ -1,0 +1,9 @@
+.footer {
+  background: lighten(black, 96%);
+  border-top: 1px solid lighten(black, 72%);
+  text-align: center;
+  line-height: 48px;
+  &-text {
+    vertical-align: middle;
+  }
+}

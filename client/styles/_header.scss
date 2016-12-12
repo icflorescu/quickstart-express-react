@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &-link {
+    display: inline-block;
+    line-height: 44px;
+    padding: 0 12px;
+
+    color: white;
+    &:hover {
+      color: rgba(white, 0.84);
+      text-decoration: none;
+    }
+  }
+
+  &-title {
+    vertical-align: middle;
+    @media(min-width: 480px) {
+      font-size: 24px;
+    }
+  }
+
+  &-menu {
+    text-align: right;
+    flex: 1 1 auto;
+  }
+}
