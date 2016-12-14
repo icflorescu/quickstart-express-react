@@ -9,13 +9,22 @@
           src="https://cloud.githubusercontent.com/assets/581999/20681348/e629cd74-b5ab-11e6-94fa-b3b30cdbacc3.png">
       </div>
       <p>A hot-reloading application quickstart based on:</p>
-      <ul class="mui-list--unstyled">
+      <ul>
         <li>Express</li>
         <li>React</li>
         <li>BrowserSync</li>
         <li>Webpack@@2</li>
         <li>Nodemon</li>
       </ul>
+      <p>
+        When a server-side template file is changed (i.e. <code>views/home.vash</code>), <code>browser-sync</code> will trigger a full page reload.
+        <br />
+        When a server-side code file is changed, <code>nodemon</code> restarts the application automatically and <code>browser-sync</code> triggers a full page reload.
+        <br />
+        <code>Webpack</code>, <code>webpack-dev-middleware</code> and <code>webpack-hot-middleware</code> are running inside <code>browser-sync</code>.
+        <br />
+        When client-side code changes, a hot-module replacement is triggered if possible. If not, a full page reload will be performed.   
+      </p>
     </div>
   })
 })

@@ -1,0 +1,5 @@
+@html.extend('layout', function (it) {
+  @html.block('content', function (it) {
+    <div class="app"></div>
+  })
+})

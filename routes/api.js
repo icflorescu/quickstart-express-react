@@ -8,7 +8,7 @@ const router = Router();
 
 router.get('/api/reminders', (req, res, next) => {
   try {
-    res.send(reminders.map(item => db._.pick(item, 'title', 'date')).value());
+    res.send(reminders.map(item => db._.pick(item, 'id', 'title', 'when')).value());
   } catch (err) {
     next(err);
   }
