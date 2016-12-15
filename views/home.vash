@@ -23,7 +23,7 @@
         <br />
         <code>Webpack</code>, <code>webpack-dev-middleware</code> and <code>webpack-hot-middleware</code> are running inside <code>browser-sync</code>.
         <br />
-        When client-side code changes, a hot-module replacement is triggered if possible. If not, a full page reload will be performed.   
+        When client-side code changes, a hot-module replacement is triggered if possible. If not, a full page reload will be performed.
       </p>
     </div>
   })
