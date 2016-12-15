@@ -11,13 +11,17 @@ class ReminderList extends Component {
   }
 
   renderItems() {
-    return this.props.reminders.map(item => <ReminderListItem key={item.id} reminder={item} />);
+    return this.props.reminders.map(
+      (item, index) => <ReminderListItem key={item.id} reminder={item} index={index} />
+    );
   }
 
   render() {
     return (
-      <div>
-        {this.renderItems()}
+      <div className="mui-container">
+        <div className="mui--z1">
+          {this.renderItems()}
+        </div>
       </div>
     );
   }
