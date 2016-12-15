@@ -4,10 +4,6 @@
 
 Combined live/hot-reloading for Express.js and React.
 
-## Warning
-
-Work in progress!
-
 ## Motivation
 
 ### TL;DR
@@ -53,7 +49,7 @@ Hence the need of a functional, truly **general-purpose hot-reloading approach**
 - In development mode, [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) are **running as browsersync middlewares**. This way we end up **keeping the main Express application uncluttered by development-related code**.
 - Webpack [babel-loader](https://github.com/babel/babel-loader) is using [stage-2](https://babeljs.io/docs/plugins/preset-stage-2/) and [react](https://babeljs.io/docs/plugins/preset-react/) presets and **[react-hot-loader](https://github.com/gaearon/react-hot-loader)@3** – configured in `webpack.config.js`.
 - On the server, the `global.Promise` is replaced with [bluebird](http://bluebirdjs.com/docs/getting-started.html) for [performance reasons](http://bluebirdjs.com/docs/benchmarks.html) – this is configured in `index.js`. Simply remove it if you don't like the idea.
--
+
 ## Contributing
 
 PRs are welcomed, but keep in mind this is just one of the [many quickstart alternatives](https://www.google.com/?q=react+quickstart) available in the wild, and it's not intended to cover all possible use-cases (or yours in particular).
