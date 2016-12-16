@@ -1,0 +1,9 @@
+linters:
+  ColorKeyword:
+    enabled: false
+  ColorVariable:
+    enabled: false
+  EmptyLineBetweenBlocks:
+    enabled: false
+  PropertySortOrder:
+    enabled: false
