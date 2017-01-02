@@ -1,7 +1,6 @@
 import { Router } from 'express';
 import db from '../utils/db';
 
-const pick = db._.pick;
 const reminders = db.get('reminders');
 
 const router = Router();
