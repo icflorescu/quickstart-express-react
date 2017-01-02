@@ -6,6 +6,7 @@ plugins:
   - react
 env:
   browser: true
+  node: true
 rules:
   quotes:
     - warn
