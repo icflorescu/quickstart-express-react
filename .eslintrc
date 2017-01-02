@@ -1,4 +1,11 @@
 parser: babel-eslint
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+plugins:
+  - react
+env:
+  browser: true
 rules:
   quotes:
     - warn
@@ -11,13 +18,17 @@ rules:
   indent:
     - warn
     - 2
-    -
-      VariableDeclarator:
+    - VariableDeclarator:
         var: 2
         let: 2
         const: 3
-      SwitchCase: 1
   max-len:
     - warn
     - 120
-    - ignoreTemplateLiterals: true
+    -
+      ignoreComments: true
+      ignoreUrls: true
+      ignoreStrings: true
+      ignoreTemplateLiterals: true
+  no-console: warn
+  react/require-render-return: error
