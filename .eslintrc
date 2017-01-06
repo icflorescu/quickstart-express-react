@@ -34,4 +34,4 @@ rules:
   no-console: warn
   react/require-render-return: error
   react/display-name: off
-  react/prop-types: warn
+  react/prop-types: off
