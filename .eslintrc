@@ -33,3 +33,5 @@ rules:
       ignoreTemplateLiterals: true
   no-console: warn
   react/require-render-return: error
+  react/display-name: off
+  react/prop-types: warn
