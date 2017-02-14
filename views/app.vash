@@ -2,4 +2,7 @@
   @html.block('content', function (it) {
     <div class="app"></div>
   })
+  @html.block('additional-scripts', function (it) {
+    <script src="@(it.static.root)/js/app.js@(it.static.suffix)"></script>
+  })
 })

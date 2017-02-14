@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="//cdn.muicss.com/mui-0.9.6/css/mui.min.css" rel="stylesheet">
+    <link href="//cdn.muicss.com/mui-0.9.9-rc2/css/mui.min.css" rel="stylesheet">
     <link rel="stylesheet" href="@(it.static.root)/css/index.css@(it.static.suffix)">
     <title>@it.title</title>
     <meta name="author" content="Ionut-Cristian Florescu">
@@ -39,7 +39,8 @@
         <a href="https://github.com/icflorescu/quickstart-express-react" target="_blank">repository</a>
       </span>
     </footer>
-    <script src="//cdn.muicss.com/mui-0.9.6/js/mui.min.js"></script>
-    <script src="@(it.static.root)/js/index.js@(it.static.suffix)"></script>
+    <script src="//cdn.muicss.com/mui-0.9.9-rc2/js/mui.min.js"></script>
+    <script src="@(it.static.root)/js/main.js@(it.static.suffix)"></script>
+    @html.block('additional-scripts')
   </body>
 </html>
