@@ -4,13 +4,14 @@ module.exports = env => {
   const dev = env ? env.dev : false;
   return {
     entry: {
-      index: dev ? [
+      app: dev ? [
         'react-hot-loader/patch',
         'webpack-hot-middleware/client?reload=true',
-        './scripts/index.js'
+        './scripts/app.js'
       ] : [
-        './scripts/index.js'
-      ]
+        './scripts/app.js'
+      ],
+      main: './scripts/main.js'
     },
 
     output: {
